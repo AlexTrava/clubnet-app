@@ -1,0 +1,54 @@
+{
+  "auth": {
+    "sign": "Sign in",
+    "yourPhone": "Your phone",
+    "enterPhone": "Enter phone number",
+    "sendSms": "Send SMS with code",
+    "signSteam": "Sign in with Steam",
+    "send": "Send",
+    "enterCode": "Enter code",
+    "registration": "Successs registarion.",
+    "useAllFunction": "Now u can use all function this web site!",
+    "backHomeButton": "Get back to home page",
+    "login": "login",
+    "withGoogle": "Continue with Google",
+    "withGithub": "Continue with Github"
+  },
+  "header": {
+    "home": "Home",
+    "contact": "Contact",
+    "auth": "Auth",
+    "features": "Features",
+    "learn": "Learn",
+    "Login": "Login",
+    "LogOut": "Log out",
+    "Auth": "Auth",
+    "Contacts": "Contacts",
+    "ViewAll": "View all",
+    "ourWorks": "Our Works",
+    "admin": "Admin",
+    "profile": "profile",
+    "name": "Harriette"
+  },
+  "navBar": {
+    "home": "Home",
+    "admin": "Admin",
+    "profile": "Profile",
+    "game": "Game",
+    "schedule": "Schedule",
+    "store": "Store",
+    "user": "User",
+    "users": "Users",
+    "settings": "Settings",
+    "logout": "Logout"
+  },
+  "profile": {
+    "update": "Update",
+    "name": "Name",
+    "enterYourName": "Enter your name"
+  },
+  "autocomplete":{
+    "searchUser":"Search user",
+    "nothingFound":"Nothing found."
+  }
+}

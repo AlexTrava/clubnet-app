@@ -1,0 +1,11 @@
+.header {
+  height: 100px;
+}
+.navbar {
+  width: 80px;
+  top: 98px;
+}
+.main {
+  padding-left: 100px;
+  padding-bottom: 50px;
+}

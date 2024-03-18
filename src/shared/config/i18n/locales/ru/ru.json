@@ -1,0 +1,53 @@
+{
+  "auth": {
+    "sign": "Войти",
+    "yourPhone": "Ваш телефон",
+    "enterPhone": "Введите ваш телефон",
+    "sendSms": "Отправить СМС с кодом",
+    "signSteam": "Войти через Steam",
+    "send": "Отправить",
+    "enterCode": "Введите код",
+    "registration": "Успешная регистрация.",
+    "useAllFunction": "Теперь ты можешь использовать весь функционал сайта!",
+    "backHomeButton": "Вернуться на домашнюю страницу.",
+    "login": "Войти",
+    "withGoogle": "Продолжить с Google",
+    "withGithub": "Продолжить с Github"
+  },
+  "header": {
+    "home": "Home",
+    "contact": "Contact",
+    "auth": "Auth",
+    "features": "Features",
+    "learn": "Learn",
+    "Login": "Login",
+    "LogOut": "Log out",
+    "Auth": "Auth",
+    "Contacts": "Contacts",
+    "ViewAll": "View all",
+    "ourWorks": "Our Works",
+    "admin": "Admin",
+    "name": "Петро"
+  },
+  "navBar": {
+    "home": "Главная",
+    "admin": "Админ",
+    "profile": "Детали",
+    "game": "Игры",
+    "schedule": "График",
+    "store": "Магазин",
+    "user": "Юзер",
+    "users": "Юзеры",
+    "settings": "Настройки",
+    "logout": "Выход"
+  },
+  "profile": {
+    "update": "Обновить",
+    "name": "Имя",
+    "enterYourName": "Введите имя"
+  },
+  "autocomplete":{
+    "searchUser":"Найти пользователя",
+    "nothingFound":"Ничего не найдено :("
+  }
+}

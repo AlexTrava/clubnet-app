@@ -1,0 +1,10 @@
+.rowSelected {
+  background-color: var(--mantine-color-blue-light);
+}
+
+.tableWrapper {
+  margin-left: auto;
+  margin-top: 50px;
+  width: calc(100vw -60px);
+}
+

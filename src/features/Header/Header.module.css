@@ -1,0 +1,13 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: light-dark(rgb(250, 247, 247), rgba(0, 0, 0, 0.45)), rgba(0, 0, 0, 0);
+  align-items: center;
+  height: 100px;
+  padding: 10px 20px;
+}
+
+.scrolled::after {
+  opacity: 1;
+}
