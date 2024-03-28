@@ -1,19 +1,13 @@
-import { Center, Text, Title } from '@mantine/core';
-import { Link, useParams } from 'react-router-dom';
+import { Flex } from '@mantine/core';
 
-import styles from './ProfilePage.module.css';
+import { ProfileInfo } from '@/enteties/ui/ProfileInfo/ProfileInfo';
 
 function ProfilePage() {
-  const { id } = useParams();
   return (
     <>
-      <Center className={styles.wrapper}>
-        <Title>ProfilePage</Title>
-        <Text>{id}</Text>
-      </Center>
-      <Center>
-        <Link to="/admin">Back to admin</Link>
-      </Center>
+      <Flex mt={'48px'} ml={'48px'}>
+        <ProfileInfo />
+      </Flex>
     </>
   );
 }

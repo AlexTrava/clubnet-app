@@ -23,7 +23,7 @@ export const CheckSmsCodeForm: FC<CheckSmsCodeFormProps> = ({ form }) => {
 
   return (
     <Paper withBorder shadow="md" p={30} radius="md" mt="xl">
-      <Text>{t('enterCode')}</Text>
+      <Text>{t('auth.enterCode')}</Text>
       <TextInput required ta="left" {...form.getInputProps('smsCode')} />
       <Flex mih={50} gap="sm" justify="center" align="center" direction="column" wrap="wrap">
         <Button

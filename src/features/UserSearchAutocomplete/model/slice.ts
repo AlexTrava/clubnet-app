@@ -63,7 +63,7 @@ const findUsers = createSlice({
 
     builder.addCase(handlerSearchUserInput.fulfilled, (state, action) => {
       state.findUsers = action.payload;
-      state.status = Status.SUCCES;
+      state.status = Status.SUCCESS;
     });
 
     builder.addCase(handlerSearchUserInput.rejected, (state) => {

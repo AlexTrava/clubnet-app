@@ -1,24 +1,24 @@
-/* eslint-disable no-nested-ternary */
 import { Avatar, Button, Flex, Group, Stack, Tabs, Text } from '@mantine/core';
 import { useHover } from '@mantine/hooks';
 import { IconPhoneCall, IconTrash, IconUpload } from '@tabler/icons-react';
 import { type FC } from 'react';
 
-import { dataUser } from '../../config/dataUser';
+import { getUser } from '@/enteties/session/User/model/selectors';
+import { useAppSelector } from '@/shared/lib/hooks/useAppSelector';
+
 import { ModalSettings } from '../ModalSettings';
 import styles from './styles.module.css';
 
 export const ProfileInfo: FC = () => {
   const { hovered, ref } = useHover();
+  const user = useAppSelector(getUser);
+  console.log(user, 'user');
 
   return (
     <Stack>
       <Group gap="xl" align="center">
         <Flex ref={ref} pos={'relative'}>
-          <Avatar
-            src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-7.png"
-            size={128}
-          />
+          <Avatar src={user.photoURL} size={128} />
           {hovered && (
             <Flex
               pos={'absolute'}
@@ -42,15 +42,19 @@ export const ProfileInfo: FC = () => {
           )}
         </Flex>
         <Stack gap="xs">
-          <Text>{dataUser.name}</Text>
+          <Text>{user.displayName}</Text>
           <Text size="32px" fw={700}>
-            {dataUser.nickName}
+            {user.nickName ? user.nickName : ''}
           </Text>
-          <Text>{dataUser.dateOfRegistration}</Text>
-          <Group>
-            <IconPhoneCall color="#868E96" width="20" height="20" />
-            <Text c="gray.6">{dataUser.phoneNumber}</Text>
-          </Group>
+          <Text>{user.email ? user.email : ''}</Text>
+          {user.phoneNumber ? (
+            <Group>
+              <IconPhoneCall color="#868E96" width="20" height="20" />
+              <Text c="gray.6">{user.phoneNumber ? user.phoneNumber : ''}</Text>
+            </Group>
+          ) : (
+            ''
+          )}
         </Stack>
         <ModalSettings />
       </Group>

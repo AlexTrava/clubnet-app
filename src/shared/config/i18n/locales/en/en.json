@@ -7,12 +7,13 @@
     "signSteam": "Sign in with Steam",
     "send": "Send",
     "enterCode": "Enter code",
-    "registration": "Successs registarion.",
+    "registration": "Success registarion.",
     "useAllFunction": "Now u can use all function this web site!",
     "backHomeButton": "Get back to home page",
     "login": "login",
     "withGoogle": "Continue with Google",
-    "withGithub": "Continue with Github"
+    "withGithub": "Continue with Github",
+    "nickName": "Nickname"
   },
   "header": {
     "home": "Home",
