@@ -1,10 +1,12 @@
 import { Flex } from '@mantine/core';
 import { useForm } from '@mantine/form';
+import { useNavigate } from 'react-router';
 
 import { getStepFormState } from '@/app/providers/StoreProvider/config/selectors'; // поправить импорт
 import { CheckSmsCodeForm, LoginForm, NickNameForm } from '@/features/Authentication/index';
 import type { FormFields } from '@/features/Authentication/model/types'; // поправить импорт
 import { useAppSelector } from '@/shared/lib/hooks/useAppSelector';
+import { RoutersPaths } from '@/shared/types/enums';
 
 export const AuthenticationForm = () => {
   const stepForm = useAppSelector(getStepFormState);
@@ -24,6 +26,8 @@ export const AuthenticationForm = () => {
     }
   });
 
+  const navigate = useNavigate();
+
   const renderForm = (stepForm: string) => {
     switch (stepForm) {
       case 'login':
@@ -31,8 +35,8 @@ export const AuthenticationForm = () => {
       case 'sms':
         return <CheckSmsCodeForm form={form} />;
       case 'auth':
-        // return <SuccessCheckCode />;
-        return <div>Succes</div>;
+        navigate(RoutersPaths.PROFILE);
+        return;
       case 'nick':
         return <NickNameForm form={form} />;
     }

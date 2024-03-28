@@ -8,3 +8,13 @@ export type FormFields = {
   smsCode: string;
   nickName: string;
 };
+
+export type UserForDB = {
+  email?: Nullable<string>;
+  displayName?: Nullable<string>;
+  photoURL?: Nullable<string>;
+  dateOfRegistration?: Nullable<string>;
+  nickName?: Nullable<string>;
+  phoneNumber?: Nullable<string>;
+  id?: Nullable<string>;
+};

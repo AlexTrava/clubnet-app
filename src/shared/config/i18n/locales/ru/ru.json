@@ -12,7 +12,8 @@
     "backHomeButton": "Вернуться на домашнюю страницу.",
     "login": "Войти",
     "withGoogle": "Продолжить с Google",
-    "withGithub": "Продолжить с Github"
+    "withGithub": "Продолжить с Github",
+    "nickName": "Никнейм"
   },
   "header": {
     "home": "Home",

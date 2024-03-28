@@ -1,6 +1,6 @@
-import { RecaptchaVerifier, signInWithPhoneNumber } from 'firebase/auth';
+import { RecaptchaVerifier, signInWithPhoneNumber, signInWithPopup } from 'firebase/auth';
 
-import { auth, db } from '@/shared/config/firebase/firebase';
+import { auth, db, githubProvider, googleProvider } from '@/shared/config/firebase/firebase';
 
 export const setupRecaptcha = (phoneNumber: string) => {
   const recapthca = new RecaptchaVerifier(auth, 'sign-in-button', {
@@ -30,4 +30,14 @@ export const convertUserField = (displayName: string) => {
     uid: currentUser?.uid
   };
   return currentUserInfo;
+};
+
+export const getGoogleAuth = () => {
+  const auth = getAuth();
+  return signInWithPopup(auth, googleProvider);
+};
+
+export const getGithubAuth = () => {
+  const auth = getAuth();
+  return signInWithPopup(auth, githubProvider);
 };
